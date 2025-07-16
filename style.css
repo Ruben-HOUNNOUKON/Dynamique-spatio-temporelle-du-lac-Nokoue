@@ -1,0 +1,754 @@
+/* Styles de base - Combinés pour l'ensemble du site */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Remplacé par une police plus lisible */
+    line-height: 0.6;
+    background-color: #f4f4f4; /* Couleur de fond unifiée */
+    text-align: center; //* Pour que le contenu central soit centré */
+}
+.entête {
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    padding-bottom: 7px;
+    padding-top: 7px;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.634);
+}
+.entête .title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:  10px 10px;
+    color: rgb(200, 226, 255);
+    font-family: Cambria;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.entête div .menu {
+    display: flex;
+    text-align: center;
+    font-size: 1em;
+    justify-content: center;
+    text-align: justify;
+}
+
+.entête div .menu li {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-decoration: none;
+}
+
+.entête div .menu li a {
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-family: cambria;
+    font-weight: 900;
+}
+
+.entête div .menu li a:hover{
+    border-bottom: 2px solid rgb(255, 150, 64);
+    transition: 0.5s;
+}
+
+/*.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}*/
+
+/* Styles de l'en-tête (Header) */
+/*
+.main-header {
+    background: lightblue; 
+    color: #333; 
+    padding: 0rem 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1rem;
+    color: #333; 
+    display: flex;
+}
+
+.main-header.container .site-title .main-nav .liste {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header.container .site-title .main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li a {
+    color: #333; 
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    display: block;
+}
+
+.main-nav ul li a:hover {
+    background: cornflowerblue; 
+    color: #fff; 
+    border-radius: 5px;
+}*/
+
+/* Styles de la section principale (Hero) - Page d'accueil */
+.herosection {
+    min-height: 735px;
+    background-image: linear-gradient(rgba(54, 55, 55, 0.945), #33333367), url("./data/background_acceuil.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.herosection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.hero-content {
+    /*position: relative;*/
+    /*z-index: 1;*/
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.hero-title {
+    font-size: 65px;
+    margin-bottom: 0.8rem;
+    font-family: 'Gabriola';
+    -webkit-text-stroke: #ffefe2 0.01px;
+    line-height: 1.1;
+
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    /*width: 85%;*/
+    padding-bottom: 0px;
+    padding-top: 30px;
+    text-align: justify;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.herosection .hero-content p:hover {
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+.main-footer {
+    height: 0px;
+    margin: 0px 0px;
+}
+
+.main-footer {
+    color: #fff;
+    background-color: #da7272d0;
+    text-align: center;
+    margin: 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.main-footer span{
+    color: #ffae00;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Style de la page a propos*/
+
+.section-2 div{
+    padding-top: 80px;
+    width: 95%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #9bc7f900;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-2 div .acadjas{
+    width: 700px;
+    height: 280px;
+   /* box-shadow: 3px 6px 4px #000;*/
+    position: relative;
+    overflow: hidden;
+    /*border: solid 2px blue;*/
+}
+
+.section-2 div .acadjas img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 6px 4px #000;
+}
+
+.section-2 div .acadjas .groupe-de-mot{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: list-item;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.section-2 div .acadjas .groupe-de-mot div{
+    padding-top: 0px;
+    text-align: center;
+    align-items: center;
+    /*justify-content: center;*/
+    display: inline;
+    background-color: #cecd7600;
+}
+
+.section-2 div .acadjas .groupe-de-mot div h3{
+    font-family: 'Gabriola';
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(94, 90, 90);
+    -webkit-text-stroke: #de7f7f 0.02px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+#Defacadjas {
+    color: rgb(0, 0, 0);
+
+}
+
+.section-2 div .acadjas .groupe-de-mot div p{
+    width: 80%;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
+    background-color: #55555500;
+}
+
+.section-2 div .acadjas:hover .groupe-de-mot{
+    transform: translateX(0%);
+}
+
+.section-2 div .paragraph{
+    color: #fff;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: justify;
+    align-items: center;
+}
+
+.section-2 div .paragraph h3{
+    color: #ffae00;
+    font-size: 1.5em;
+    padding-bottom: 0px;
+    text-align: justify;
+}
+
+.section-2 div .paragraph p{
+    color: #000000;
+    text-align: justify;
+    justify-content: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-bottom: 0px;
+}
+
+.section-2 div .paragraph p span{
+    font-weight: bold;
+    font-style: italic;
+}
+.section-2 div .paragraph div{
+    width: 19%;
+    text-align: justify;
+    align-items: center;
+    
+}
+
+
+
+.section-3 {
+    margin: 0px;
+    background-color: #000000f7;
+    min-height: 500px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-3 h3 {
+    padding-top: 50px;
+    color: #ffae00;
+    padding-bottom: 20px;
+}
+
+.section-3 .photoacadja{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-3 .photoacadja .nombre {
+    width: 280px;
+    height: 200px;
+    /*box-shadow: 3px 6px 4px #3b3b3b;*/
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.section-3 .photoacadja .nombre img {
+    height: 100%;
+    width: 100%;
+}
+
+.Auteur {
+    padding: 5px;
+    background-color: #0d1415c2;
+}
+
+.Auteur div{
+    color: #fff;
+}
+
+.Auteur div span{
+    color: #ffae00;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+/* Styles de la section de la carte (Map) - Page Dynamique Spatio-temporelle */
+.map-section {
+    padding: 2rem 0;  
+}
+
+.map-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding-top: 110px;
+}
+
+#map {
+    height: 70vh;
+    width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding-top: 0px;
+    margin-bottom: 59px;
+}
+
+#info-box {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#current-year {
+    color: rgb(13, 1, 144);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+}
+
+/* L'animation de clignotement (pulsation) */
+@keyframes blink {
+    0% { opacity: 0.1; }
+    50% { opacity: 1; }
+    100% { opacity: 0.1; }
+}
+
+.blink-layer {
+    animation: blink 1.5s infinite;
+}
+
+/* Styles pour la légende de la carte */
+.info.legend {
+    background: white;
+    padding: 6px 8px;
+    line-height: 2.0;
+    color: #555;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    text-align: justify;
+}
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+
+/* style.css - Nouveaux styles pour les contrôles et données */
+
+.map-controls {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 7px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000; /* Assurez-vous qu'il soit au-dessus de la carte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#year-slider {
+    width: 300px;
+}
+
+.slider-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+.slider-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.data-info {
+    position: absolute;
+    bottom: 20px; /* Ou ajustez si le slider est trop proche */
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.data-info h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.data-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Styles pour les légendes Leaflet génériques (vos légendes actuelles) */
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    /* Ancien background: rgba(255,255,255,0.8); C'est déjà semi-transparent par défaut*/
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 10px; /* Ajout d'une marge entre les légendes si elles sont empilées */
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+.info i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/* Nouveau style pour le contrôle de superficie */
+.legend-superficie { 
+    width: 155px;
+    height: 103px;
+    align-items: center;
+    top: 70px;
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    /* Ajout du background ici */
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent pour le mettre en évidence */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    /*min-width: 200px;  Exemple, ajustez selon votre design */
+}
+
+.legend-superficie h3 { /* Style pour le titre des superficies */
+    margin: 0 0 5px;
+    color: #555; 
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.legend-superficie p {
+    margin: 3px 0;
+    color: #555;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+/* Style CSS de la partie contact*/
+
+.sixieme{
+    width: 100%;
+    min-height: 655px;
+    background-image: url(./data/background_contact.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sixieme .box{
+    width: 30%;
+    height: 330px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #48474740;
+
+}
+
+.sixieme .titre{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'cambria';
+    margin-top: 0px;
+    padding-top: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    color: #00000000;
+}
+
+.sixieme .titre h3 span{
+    color: #ff990000;
+    font-size: 1.3em;
+}
+
+.sixieme .text{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'cambria';
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.sixieme .box .text h5{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+.sixieme .box .inputbox{
+    width: 85%;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.sixieme .box .inputbox input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid#000;
+}
+
+.sixieme .box .message{
+    width: 85%;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sixieme .box .message textarea{
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 1.1em;
+    font-family: 'calibri';
+    font-weight: 200;
+}
+
+.sixieme .box .submit{
+    width: 85%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-align: left;
+}
+
+.sixieme .box .submit input{
+    color: #fff;
+    font-family: 'calibri';
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background-color: #ff9900;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sixieme .box .submit input:hover{
+    letter-spacing: 2px;
+}
+
+/* Partie impact */
+
+.premierepartie {
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.premierepartie h3 {
+    padding-top: 120px;
+    width: 100%;
+    text-align: center;
+    color: #262626df;
+    font-size: 1.6em;
+}
+
+.premierepartie p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    line-height: 1.8;
+
+}
+
+.premierepartie .image {
+    background-color: #25252579;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.premierepartie div img {
+    width: 900px;
+    height: 550px;
+    box-shadow: 3px 6px 4px #000000;
+}
+
+/* Styles pour l'audio d'analyse sur la page impact */
+.whatsapp-audio-container {
+    display: flex; /* Utilise Flexbox pour centrer facilement le contenu */
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre horizontalement les éléments enfants (label et audio) */
+    justify-content: center; /* Centre verticalement si le conteneur a une hauteur définie */
+    
+    margin: 30px auto; /* Marge au-dessus et en-dessous, et centre le conteneur lui-même */
+    padding: 15px 25px; /* Espacement interne */
+    background-color: #e0f2f1; /* Couleur de fond légère, proche de WhatsApp */
+    border-radius: 15px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet de profondeur */
+    max-width: 600px; /* Largeur maximale pour que le lecteur ne soit pas trop étiré */
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+.whatsapp-audio-container .audio-label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px; /* Espacement entre le label et le lecteur audio */
+    line-height: 1.5;
+    padding: 0 10px; /* Évite que le texte ne colle aux bords sur petits écrans */
+}
+
+.whatsapp-audio-container audio {
+    width: 100%; /* Le lecteur audio prendra toute la largeur disponible du conteneur */
+    max-width: 550px; /* Limiter la largeur du lecteur lui-même si le conteneur est plus grand */
+    height: 40px; /* Ajuster la hauteur si nécessaire, bien que le navigateur gère cela souvent */
+    /* Les contrôles natifs sont difficiles à styliser directement. 
+       Les styles ci-dessus s'appliquent au conteneur pour l'effet WhatsApp. */
+}
