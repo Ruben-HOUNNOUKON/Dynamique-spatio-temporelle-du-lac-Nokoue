@@ -39,9 +39,9 @@ function initMap() {
     
     // --- Légende des Occupations du lac ---
     const legendDataOccupation = [
-        { label: 'Acadjas', color: '#52dc2e', classValue: 3 },
-        { label: 'Eau', color: '#e8633f', classValue: 1 },
-        { label: 'Jacinthe d\'eau', color: '#7fdfff', classValue: 2 },
+        { label: 'Acadjas', color: '#e8633f', classValue: 3 },
+        { label: 'Eau', color: '#7fdfff', classValue: 1 },
+        { label: 'Jacinthe d\'eau', color: '#52dc2e', classValue: 2 },
         { label: 'Habitation', color: '#dc1010', classValue: 4 }
     ];
 
