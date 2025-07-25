@@ -377,8 +377,8 @@ async function updateQuantitativeData(year) {
 
             if (typeof surface_m2 === 'number' && !isNaN(surface_m2)) {
                 switch (classValue) {
-                    case 1: totalEau_m2 += surface_m2; break;
-                    case 2: totalJacinthe_m2 += surface_m2; break;
+                    case 1: totalJacinthe_m2 += surface_m2; break;
+                    case 2: totalEau_m2 += surface_m2; break;
                     case 3: totalAcadjas_m2 += surface_m2; break;
                     case 4: totalHabitation_m2 += surface_m2; break;
                 }
