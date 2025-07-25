@@ -1,8 +1,8 @@
 // Liste des années pour l'animation
 const years = ['2005', '2008', '2010', '2014', '2016', '2018', '2022', '2024'];
-const yearDisplayDuration = 3000; // Durée d'affichage d'une année (couche d'occupation)
-const changeDisplayDuration = 5000; // Durée d'affichage de la couche de changement (moins longue que 10s pour un clignotement + visible)
-const initialDelay = 6000; // Délai initial avant le début de la boucle
+const yearDisplayDuration = 2000; // Durée d'affichage d'une année (couche d'occupation)
+const changeDisplayDuration = 3000; // Durée d'affichage de la couche de changement (moins longue que 10s pour un clignotement + visible)
+const initialDelay = 3000; // Délai initial avant le début de la boucle
 
 // Variables pour la carte et les couches
 let map;
@@ -307,7 +307,7 @@ function styleChangeFeatures(feature) {
     }
     return {
         fillColor: 'transparent',
-        weight: 0.60,
+        weight: 0.55,
         opacity: 1,
         color: borderColor,
         fillOpacity: 0
@@ -377,9 +377,9 @@ async function updateQuantitativeData(year) {
 
             if (typeof surface_m2 === 'number' && !isNaN(surface_m2)) {
                 switch (classValue) {
-                    case 1: totalJacinthe_m2 += surface_m2; break;
+                    case 1: totalAcadjas_m2 += surface_m2; break;
                     case 2: totalEau_m2 += surface_m2; break;
-                    case 3: totalAcadjas_m2 += surface_m2; break;
+                    case 3: totalJacinthe_m2 += surface_m2; break;
                     case 4: totalHabitation_m2 += surface_m2; break;
                 }
             } else {
