@@ -1,7 +1,7 @@
 // Liste des années pour l'animation
 const years = ['2005', '2008', '2010', '2014', '2016', '2018', '2022', '2024'];
-const yearDisplayDuration = 2000; // Durée d'affichage d'une année (couche d'occupation)
-const changeDisplayDuration = 3000; // Durée d'affichage de la couche de changement (moins longue que 10s pour un clignotement + visible)
+const yearDisplayDuration = 3000; // Durée d'affichage d'une année (couche d'occupation)
+const changeDisplayDuration = 4000; // Durée d'affichage de la couche de changement (moins longue que 10s pour un clignotement + visible)
 const initialDelay = 3000; // Délai initial avant le début de la boucle
 
 // Variables pour la carte et les couches
